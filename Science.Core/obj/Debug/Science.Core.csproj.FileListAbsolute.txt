@@ -1,0 +1,5 @@
+F:\Users\Hamster\documents\visual studio 2015\University\Geo\Science\Science.Core\bin\Debug\Science.Core.dll
+F:\Users\Hamster\documents\visual studio 2015\University\Geo\Science\Science.Core\bin\Debug\Science.Core.pdb
+F:\Users\Hamster\documents\visual studio 2015\University\Geo\Science\Science.Core\obj\Debug\Science.Core.csprojResolveAssemblyReference.cache
+F:\Users\Hamster\documents\visual studio 2015\University\Geo\Science\Science.Core\obj\Debug\Science.Core.dll
+F:\Users\Hamster\documents\visual studio 2015\University\Geo\Science\Science.Core\obj\Debug\Science.Core.pdb
