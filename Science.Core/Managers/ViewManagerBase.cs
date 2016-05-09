@@ -1,6 +1,7 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Practices.ServiceLocation;
 using Science.Core.MVVM.ViewModels;
 using Science.Core.MVVM.Views;
 
@@ -65,4 +66,3 @@ namespace Science.Core.Managers
         }
     }
 }
-*/

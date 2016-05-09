@@ -13,3 +13,11 @@ F:\Users\Hamster\documents\visual studio 2015\University\Geo\Science\Science.Mai
 F:\Users\Hamster\documents\visual studio 2015\University\Geo\Science\Science.MainProgram\obj\Debug\Science.MainProgram.exe
 F:\Users\Hamster\documents\visual studio 2015\University\Geo\Science\Science.MainProgram\obj\Debug\Science.MainProgram.pdb
 F:\Users\Hamster\documents\visual studio 2015\University\Geo\Science\Science.MainProgram\bin\Debug\App.config
+F:\Users\Hamster\Documents\visual studio 2015\University\Geo\Science\Science.MainProgram\bin\Debug\Science.Core.dll
+F:\Users\Hamster\Documents\visual studio 2015\University\Geo\Science\Science.MainProgram\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\Users\Hamster\Documents\visual studio 2015\University\Geo\Science\Science.MainProgram\bin\Debug\Ninject.dll
+F:\Users\Hamster\Documents\visual studio 2015\University\Geo\Science\Science.MainProgram\bin\Debug\CommonServiceLocator.NinjectAdapter.Unofficial.dll
+F:\Users\Hamster\Documents\visual studio 2015\University\Geo\Science\Science.MainProgram\bin\Debug\Science.Core.pdb
+F:\Users\Hamster\Documents\visual studio 2015\University\Geo\Science\Science.MainProgram\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\Users\Hamster\Documents\visual studio 2015\University\Geo\Science\Science.MainProgram\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+F:\Users\Hamster\Documents\visual studio 2015\University\Geo\Science\Science.MainProgram\bin\Debug\Ninject.xml

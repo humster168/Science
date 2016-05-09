@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.Practices.ServiceLocation;
 using Science.Core.MVVM.ViewModels;
 
 namespace Science.Core.Managers
@@ -29,6 +30,7 @@ namespace Science.Core.Managers
 
         protected virtual void OnViewModelShown(IChildViewModel vm)
         {
+            ViewModelShown = ServiceLocator.Current.GetInstance<ViewModelEventArgs<IChildViewModel>>()
             var handler = ViewModelShown;
             if (handler != null) handler(this, new ViewModelEventArgs<IChildViewModel>(vm));
         }

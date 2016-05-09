@@ -30,10 +30,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CommonServiceLocator.NinjectAdapter.Unofficial, Version=3.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.NinjectAdapter.Unofficial.3.2.2.0\lib\Net40\CommonServiceLocator.NinjectAdapter.Unofficial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,11 +58,16 @@
   <ItemGroup>
     <Compile Include="CustomAttributes\CommandDependencyAttribute.cs" />
     <Compile Include="CustomAttributes\StartupClassAttribute.cs" />
+    <Compile Include="Managers\ChildViewManager.cs" />
     <Compile Include="Managers\ChildViewModelManager.cs" />
     <Compile Include="Managers\IViewModelManager.cs" />
     <Compile Include="Managers\ViewManagerBase.cs" />
+    <Compile Include="Misc\CustomApplication.cs" />
     <Compile Include="Misc\RelayCommand.cs" />
     <Compile Include="Misc\UiThread.cs" />
+    <Compile Include="Module\ModuleDataModel.cs" />
+    <Compile Include="Module\ModuleDataWorker.cs" />
+    <Compile Include="Module\ModuleViewModel.cs" />
     <Compile Include="MVVM\ViewModels\ChildViewModelBase.cs" />
     <Compile Include="MVVM\ViewModels\IChildViewModel.cs" />
     <Compile Include="MVVM\ViewModels\IViewModel.cs" />
@@ -59,7 +77,9 @@
     <Compile Include="MVVM\Views\IViewManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

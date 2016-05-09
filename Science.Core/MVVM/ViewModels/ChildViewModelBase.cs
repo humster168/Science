@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Practices.ServiceLocation;
 using Science.Core.Managers;
 using Science.Core.Misc;
 
@@ -6,7 +7,12 @@ namespace Science.Core.MVVM.ViewModels
 {
     public abstract class ChildViewModelBase : ViewModelBase, IChildViewModel
     {
-        protected virtual IViewModelManager<IChildViewModel> ViewModelManager { get; set; }
+        private IViewModelManager<IChildViewModel> ViewModelManager { get;}
+
+        public ChildViewModelBase()
+        {
+            ViewModelManager = ServiceLocator.Current.GetInstance<IViewModelManager<IChildViewModel>>();
+        }
 
         private bool? _modalResult;
         private string _title;

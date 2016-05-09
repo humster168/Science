@@ -5,17 +5,21 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using Microsoft.Practices.ServiceLocation;
+using Science.Core.Misc;
 
 namespace Science.MainProgram
 {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : Application
+    public partial class App : CustomApplication
     {
         public App()
         {
-            var v = new MainViewModel();
+            SetupNinject();
+            var mainProgram = ServiceLocator.Current.GetInstance<MainViewModel>();
+            mainProgram.Show();
         }
     }
 }
