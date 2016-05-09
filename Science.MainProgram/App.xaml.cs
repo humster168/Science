@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using System.Windows;
 using Microsoft.Practices.ServiceLocation;
 using Science.Core.Misc;
+using Science.Core.MVVM.ViewModels;
+using Science.Core.MVVM.Views;
 
 namespace Science.MainProgram
 {
@@ -19,6 +21,7 @@ namespace Science.MainProgram
         {
             SetupNinject();
             var mainProgram = ServiceLocator.Current.GetInstance<MainViewModel>();
+            ServiceLocator.Current.GetInstance<IViewManager<IChildViewModel>>();
             mainProgram.Show();
         }
     }

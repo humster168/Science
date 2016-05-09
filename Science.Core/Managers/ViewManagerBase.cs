@@ -7,30 +7,27 @@ using Science.Core.MVVM.Views;
 
 namespace Science.Core.Managers
 {
-    public abstract class ViewManagerBase<TVm> : IViewManager<TVm> where TVm : IViewModel
+    public abstract class ViewManagerBase<TChildViewModel> : IViewManager<TChildViewModel> where TChildViewModel : IViewModel
     {
-        protected readonly IServiceLocator ServiceLocator;
-
-        protected ViewManagerBase(IViewModelManager<TVm> vmManager, IServiceLocator serviceLocator)
+        protected ViewManagerBase(IViewModelManager<TChildViewModel> vmManager)
         {
-            ServiceLocator = serviceLocator;
             vmManager.ViewModelShown += OnViewModelShown;
             vmManager.ViewModelClosed += OnViewModelClosed;
         }
 
-        private void OnViewModelShown(object sender, ViewModelEventArgs<TVm> e)
+        private void OnViewModelShown(object sender, ViewModelEventArgs<TChildViewModel> e)
         {
             ShowViewForViewModel(e.ViewModel);
         }
 
-        private void OnViewModelClosed(object sender, ViewModelEventArgs<TVm> e)
+        private void OnViewModelClosed(object sender, ViewModelEventArgs<TChildViewModel> e)
         {
             CloseViewForViewModel(e.ViewModel);
         }
 
-        public abstract void ShowViewForViewModel(TVm viewModel);
+        public abstract void ShowViewForViewModel(TChildViewModel viewModel);
 
-        public abstract void CloseViewForViewModel(TVm viewModel);
+        public abstract void CloseViewForViewModel(TChildViewModel viewModel);
 
         protected IView ResolveView(Type viewModelType)
         {
@@ -41,7 +38,7 @@ namespace Science.Core.Managers
 
         protected IView ResolveView(string contractName)
         {
-            var view = ServiceLocator.GetInstance<IView>(contractName);
+            var view = ServiceLocator.Current.GetInstance<IView>(contractName);
             return view;
         }
 

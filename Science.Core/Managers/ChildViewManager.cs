@@ -7,8 +7,8 @@ namespace Science.Core.Managers
 {
     public class ChildViewManager : ViewManagerBase<IChildViewModel>
     {
-        public ChildViewManager(IViewModelManager<IChildViewModel> vmManager, IServiceLocator serviceLocator)
-            : base(vmManager, serviceLocator)
+        public ChildViewManager(IViewModelManager<IChildViewModel> vmManager)
+            : base(vmManager)
         {
         }
 

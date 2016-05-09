@@ -26,6 +26,7 @@ namespace Science.Core.Misc
             //todo: change Child to implementation (even if implementation would be empty)
             kernal.Bind<IViewModelManager<IChildViewModel>>().To<ChildViewModelManager>();
             kernal.Bind<IViewManager<IChildViewModel>>().To<ChildViewManager>();
+            //var x = ServiceLocator.Current.GetInstance(typeof())
             ServiceLocator.SetLocatorProvider(() => ninjectServiceLocator);
         }
     }

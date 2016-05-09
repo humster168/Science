@@ -2,9 +2,9 @@
 
 namespace Science.Core.MVVM.Views
 {
-    public interface IViewManager<in TVm> where TVm : IViewModel
+    public interface IViewManager<in TChildViewModel> where TChildViewModel : IViewModel
     {
-        void ShowViewForViewModel(TVm viewModel);
-        void CloseViewForViewModel(TVm viewModel);
+        void ShowViewForViewModel(TChildViewModel viewModel);
+        void CloseViewForViewModel(TChildViewModel viewModel);
     }
 }
