@@ -51,9 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ManagersFun\BaseManager.cs" />
-    <Compile Include="ManagersFun\IModuleManager.cs" />
-    <Compile Include="ManagersFun\ModuleManager.cs" />
+    <Compile Include="ModuleManagersFun\BaseManager.cs" />
+    <Compile Include="ModuleManagersFun\IModuleManager.cs" />
+    <Compile Include="ModuleManagersFun\ModuleManager.cs" />
     <Compile Include="NinjectFun\CustomNinjectModule.cs" />
     <Compile Include="NinjectFun\NinjectDependencies\ITest.cs" />
     <Compile Include="Program.cs" />
@@ -69,6 +69,10 @@
     <ProjectReference Include="..\Science.Core\Science.Core.csproj">
       <Project>{3B8BD47B-CAE4-4FB2-80A1-67F73D13B101}</Project>
       <Name>Science.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Science.Module.Core\Science.Module.Core.csproj">
+      <Project>{315A2958-874F-4AFF-88D3-4679C14FF932}</Project>
+      <Name>Science.Module.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

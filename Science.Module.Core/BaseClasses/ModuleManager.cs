@@ -1,13 +1,11 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Threading.Tasks;
-using ForTests.ManagersFun;
+using Experiments.ModuleManagersFun;
 using Ninject;
 using Ninject.Parameters;
 using Science.Core.BaseInterfaces;
-using Science.Core.Module;
+using Science.Module.Core.BaseInterfaces;
 
-namespace Experiments.ManagersFun
+namespace Science.Module.Core.BaseClasses
 {
     public class ModuleManager : BaseManager, IModuleManager
     {

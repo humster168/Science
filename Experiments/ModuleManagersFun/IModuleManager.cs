@@ -1,9 +1,9 @@
-﻿using System;
-using Ninject.Parameters;
+﻿using Ninject.Parameters;
 using Science.Core.BaseInterfaces;
-using Science.Core.Module;
+using Science.Module.Core.BaseClasses;
+using Science.Module.Core.BaseInterfaces;
 
-namespace Experiments.ManagersFun
+namespace Experiments.ModuleManagersFun
 {
     public interface IModuleManager
     {

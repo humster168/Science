@@ -1,4 +1,4 @@
-﻿namespace Science.Core.Module
+﻿namespace Science.Module.Core.BaseClasses
 {
     public abstract class ModuleViewModel
     {

@@ -1,6 +1,6 @@
 ﻿using Ninject;
 
-namespace ForTests.ManagersFun
+namespace Experiments.ModuleManagersFun
 {
     public class BaseManager
     {
