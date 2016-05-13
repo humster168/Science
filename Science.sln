@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Science.Module.UnitTests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Science.CustomMath", "Science.CustomMath\Science.CustomMath.csproj", "{4130BE07-0D5E-4295-AC97-37817BF84D5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Science.MVVM.Core", "Science.MVVM.Core\Science.MVVM.Core.csproj", "{24388427-567B-4A0E-851A-5905E18C4EB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{4130BE07-0D5E-4295-AC97-37817BF84D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4130BE07-0D5E-4295-AC97-37817BF84D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4130BE07-0D5E-4295-AC97-37817BF84D5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24388427-567B-4A0E-851A-5905E18C4EB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24388427-567B-4A0E-851A-5905E18C4EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24388427-567B-4A0E-851A-5905E18C4EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24388427-567B-4A0E-851A-5905E18C4EB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

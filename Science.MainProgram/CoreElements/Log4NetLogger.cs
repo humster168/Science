@@ -1,28 +1,39 @@
 ﻿using System;
+using System.Diagnostics;
+using log4net;
+using Ninject;
 using Science.Core.Logging;
 
 namespace Science.MainProgram.CoreElements
 {
     public class Log4NetLogger : ILogger
     {
+        private ILog log;
+        [Inject]
+        public Log4NetLogger(Type type)
+        {
+            log = LogManager.GetLogger(type);
+            //todo: get parent class name and use in logs
+        }
         public void LogMessage(string message)
         {
-            throw new NotImplementedException();
+            log.Info(message);
         }
 
         public void LogError(string error, string location = null)
         {
-            throw new NotImplementedException();
+            log.Error(error);
         }
 
         public void LogException(Exception e)
         {
-            throw new NotImplementedException();
+            log.Fatal(ExceptionToString(e));
         }
 
-        private void ExceptionToString(Exception e)
+        private string ExceptionToString(Exception e)
         {
-            throw new NotImplementedException();
+            //todo: better implementation
+            return e.ToString();
         }
     }
 }

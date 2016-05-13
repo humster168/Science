@@ -5,6 +5,8 @@ using ForTests.NinjectFun;
 using Ninject;
 using Ninject.Extensions.Conventions;
 using Ninject.Parameters;
+using Science.Core.Logging;
+using Science.MainProgram.CoreElements;
 
 namespace Experiments
 {
@@ -12,9 +14,20 @@ namespace Experiments
     {
         public static void Main(string[] args)
         {
-            
+            Log4NetFun();
 
         }
+
+        private static void Log4NetFun()
+        {
+            log4net.Config.XmlConfigurator.Configure();
+            var kernal = new StandardKernel(new BaseNinjectModule());
+            var logger = kernal.Get<ILogger>(new ConstructorArgument("type", typeof(Program)));
+            logger.LogError("azazazaza");
+            logger.LogException(new Exception("exception"));
+            logger.LogMessage("message");
+        }
+
         //not work anymore
         private static void Ninjectfun()
         {

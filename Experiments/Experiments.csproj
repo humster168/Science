@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
       <Private>True</Private>
@@ -69,6 +73,10 @@
     <ProjectReference Include="..\Science.Core\Science.Core.csproj">
       <Project>{3B8BD47B-CAE4-4FB2-80A1-67F73D13B101}</Project>
       <Name>Science.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Science.MainProgram\Science.MainProgram.csproj">
+      <Project>{EC4A9CFA-B3A2-4388-8329-0796C5FE98B7}</Project>
+      <Name>Science.MainProgram</Name>
     </ProjectReference>
     <ProjectReference Include="..\Science.Module.Core\Science.Module.Core.csproj">
       <Project>{315A2958-874F-4AFF-88D3-4679C14FF932}</Project>

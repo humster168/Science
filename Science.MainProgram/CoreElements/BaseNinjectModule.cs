@@ -1,7 +1,13 @@
-﻿namespace Science.MainProgram.CoreElements
+﻿using Ninject.Modules;
+using Science.Core.Logging;
+
+namespace Science.MainProgram.CoreElements
 {
-    public class BaseNinjectModule
+    public class BaseNinjectModule : NinjectModule
     {
-        
+        public override void Load()
+        {
+            Bind<ILogger>().To<Log4NetLogger>();
+        }
     }
 }
