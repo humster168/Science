@@ -65,6 +65,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ConfigSettings.cs" />
+    <Compile Include="CoreElements\BaseNinjectModule.cs" />
+    <Compile Include="CoreElements\Log4NetLogger.cs" />
+    <Compile Include="CoreElements\ModulesNinjectModule.cs" />
     <Compile Include="MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>

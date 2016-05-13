@@ -59,6 +59,7 @@
     <Compile Include="BaseInterfaces\IDataWorker.cs" />
     <Compile Include="CustomAttributes\CommandDependencyAttribute.cs" />
     <Compile Include="CustomAttributes\StartupClassAttribute.cs" />
+    <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Managers\BaseManager.cs" />
     <Compile Include="Managers\ChildViewManager.cs" />
     <Compile Include="Managers\ChildViewModelManager.cs" />

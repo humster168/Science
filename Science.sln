@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experiments", "Experiments\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Science.Module.Core", "Science.Module.Core\Science.Module.Core.csproj", "{315A2958-874F-4AFF-88D3-4679C14FF932}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Science.Module.UnitTests", "Science.Module.UnitTests\Science.Module.UnitTests.csproj", "{7910F64C-6E06-4383-8E2E-ABB068D127B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Science.CustomMath", "Science.CustomMath\Science.CustomMath.csproj", "{4130BE07-0D5E-4295-AC97-37817BF84D5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{315A2958-874F-4AFF-88D3-4679C14FF932}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{315A2958-874F-4AFF-88D3-4679C14FF932}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{315A2958-874F-4AFF-88D3-4679C14FF932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7910F64C-6E06-4383-8E2E-ABB068D127B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7910F64C-6E06-4383-8E2E-ABB068D127B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7910F64C-6E06-4383-8E2E-ABB068D127B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7910F64C-6E06-4383-8E2E-ABB068D127B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4130BE07-0D5E-4295-AC97-37817BF84D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4130BE07-0D5E-4295-AC97-37817BF84D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4130BE07-0D5E-4295-AC97-37817BF84D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4130BE07-0D5E-4295-AC97-37817BF84D5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

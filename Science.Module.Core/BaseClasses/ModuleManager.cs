@@ -1,8 +1,8 @@
 ﻿using System;
-using Experiments.ModuleManagersFun;
 using Ninject;
 using Ninject.Parameters;
 using Science.Core.BaseInterfaces;
+using Science.Core.Managers;
 using Science.Module.Core.BaseInterfaces;
 
 namespace Science.Module.Core.BaseClasses
