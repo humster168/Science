@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using Experiments.NinjectFun.NinjectDependencies;
 using ForTests;
 using ForTests.NinjectFun;
@@ -15,14 +16,13 @@ namespace Experiments
         public static void Main(string[] args)
         {
             Log4NetFun();
-
         }
 
         private static void Log4NetFun()
         {
             log4net.Config.XmlConfigurator.Configure();
             var kernal = new StandardKernel(new BaseNinjectModule());
-            var logger = kernal.Get<ILogger>(new ConstructorArgument("type", typeof(Program)));
+            var logger = kernal.Get<ILogger>();
             logger.LogError("azazazaza");
             logger.LogException(new Exception("exception"));
             logger.LogMessage("message");

@@ -10,10 +10,22 @@ namespace Science.MainProgram.CoreElements
     {
         private ILog log;
         [Inject]
-        public Log4NetLogger(Type type)
+        public Log4NetLogger()
         {
-            log = LogManager.GetLogger(type);
-            //todo: get parent class name and use in logs
+            StackTrace stackTrace = new StackTrace();
+            StackFrame[] stackFrames = stackTrace.GetFrames();
+            //search for called member exclude ninject
+            if (stackFrames != null)
+            {
+                var type = stackFrames[10]?.GetMethod()?.DeclaringType; //todo: change 10 to some index search (like skip all ninject and take)
+                log = LogManager.GetLogger(type);
+            }
+            else
+            {
+                var type = this.GetType();
+                log = LogManager.GetLogger(type);
+                log.Fatal($"Type of called instance not recognized/nstackTrace:{stackTrace}");
+            }
         }
         public void LogMessage(string message)
         {
